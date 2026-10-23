@@ -1,0 +1,38 @@
+{
+  "name": "timcheck",
+  "version": "1.0.0",
+  "description": "TimCheck - an educational plagiarism-checker demonstration (not affiliated with Turnitin)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node src/migrate.js",
+    "seed": "node src/seed.js",
+    "add-sources": "node src/seed.js",
+    "worker": "node src/worker.js",
+    "load-test": "node scripts/load-test.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
+    "mammoth": "^1.13.0",
+    "multer": "^2.5.0",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.20.2",
+    "pg": "^8.23.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20.16 <21 || >=22.3"
+  },
+  "optionalDependencies": {
+    "@aws-sdk/client-s3": "^3.1156.0"
+  }
+}
